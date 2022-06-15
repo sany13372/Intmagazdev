@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+            <main class="page">
+                <section class="glavn">
+                    <div class="glavn__container">
+                        <div class="glavn__title">Главная</div>
+                        <a href="" class="glavn__link"><div class="glavn__ic1"></div><div class="glavn__title2"> Личный кабинет</div> </a>
+                    </div>
+            </section>
+            <section class="room">
+                <div class="room__container">
+                    <div class="room__body body-room">
+                        <div class="body-room__left-room room-left">
+                            <div class="room-left__body-block">
+                                <h3 class="room-left__title">Мой профиль</h3>
+                                <div class="room-left__line">
+                                    <div class="room-left__block-info">Суворова В.П</div>
+                                    <div class="room-left__block-info">ИП Суворова</div>
+                                </div>
+                                <div class="room-left__line">
+                                    <div class="room-left__block-info">+7 919 91738 92</div>
+                                    <div class="room-left__block-info">ИНН 4567894321</div>
+                                </div>
+                                <div class="room-left__line">
+                                    <div class="room-left__block-info">supervika94@icloud.com</div>
+                                    <div class="room-left__block-info">Пароль</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-room__right-room room-right">
+                            <div class="room-right__line">
+                                <a href="orders.html">
+                                <div class="room-right__block">
+                                    <div class="room-right__block-ic">
+                                        <div class="room-right__block-img"><img src="@img/54.png" class="room-right__img" alt="Картинка"></div>
+                                        <div class="room-right__title">Заказы</div>
+                                    </div>
+                                </div>
+                                </a>
+                                <a href="">
+                                <div class="room-right__block">
+                                    <div class="room-right__block-ic">
+                                        <div class="room-right__block-img"><img src="@img/58.png" class="room-right__img" alt="Картинка"></div>
+                                        <div class="room-right__title">Рейтинг</div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="room-right__line">
+                                <a href="">
+                                <div class="room-right__block">
+                                    <div class="room-right__block-ic">
+                                        <div class="room-right__block-img"><img src="@img/57.png" class="room-right__img" alt="Картинка"></div>
+                                        <div class="room-right__title">Список сравнений</div>
+                                    </div>
+                                </div>
+                                </a>
+                                <a href="reviews.html">
+                                <div class="room-right__block">
+                                    <div class="room-right__block-ic">
+                                        <div class="room-right__block-img"><img src="@img/56.png" class="room-right__img" alt="Картинка"></div>
+                                        <div class="room-right__title">Отзывы</div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="room-right__line2" data-popup="#popup4">
+                                <div class="room-right__block-help">
+                                    <div class="room-right__block-ic">
+                                        <div class="room-right__block-img"><img src="@img/55.png" class="room-right__img" alt="Картинка"></div>
+                                        <div class="room-right__title">Служба поддержки (связь с продавцом)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_popup1.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+</html>

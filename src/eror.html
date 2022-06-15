@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+            <main class="page">
+                <section class="zakazsucsesfull">
+                    <div class="zakazsucsesfull__container">
+                        <div class="zakazsucsesfull__block-img"><img src="@img/65.png" class="zakazsucsesfull__img" alt="Картинка"></div>
+                        <h3 class="zakazsucsesfull__title">Упс... похоже что-то пошло не так </h3>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.htm',{})
+        </div>
+        @@include('html/_popup.htm',{})
+        @@include('html/_popup1.htm',{})
+        @@include('html/_js.htm',{})
+    </body>
+    </html>

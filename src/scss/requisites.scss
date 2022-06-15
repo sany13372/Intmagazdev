@@ -1,0 +1,94 @@
+.requisites {
+    margin: 65px 0px 0px 0px;
+
+    // .requisites__container
+
+    &__container {
+        max-width: 1265px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+
+    // .requisites__title
+
+    &__title {
+        margin: 0px 0px 53px 0px;
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+        font-size: rem(24);
+        line-height: math.div(30 ,24 );
+        color: $MainColorBlue;
+    }
+
+    // .requisites__body
+
+    &__body {
+    }
+
+    // .requisites__line1
+
+    &__line1 {
+        display: flex;
+        gap: 14px;
+        @media (max-width: em(632)){
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    // .requisites__line2
+
+    &__line2 {
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+    }
+}
+.line1-requisites {
+
+    // .line1-requisites__block
+
+    &__block {
+        flex: 0 1 200px;
+        margin: 0px 0px 14px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 50px rgba(73, 122, 226, 0.2), inset 0px 0px 3px rgba(50, 87, 164, 0.25);
+        border-radius: 15px;
+        padding: 30px;
+        font-size: rem(18);
+        line-height: math.div(23 ,18 );
+        @media (max-width: em(632)){
+            padding: 20px;
+        }
+    }
+    &__block1 {
+        flex: 1 1 auto;
+        display: flex;
+        margin: 0px 0px 14px 0px;
+        justify-content: center;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 50px rgba(73, 122, 226, 0.2), inset 0px 0px 3px rgba(50, 87, 164, 0.25);
+        padding: 40px 0px 0px 0px;
+        border-radius: 15px;
+        font-size: rem(18);
+        line-height: math.div(23 ,18 );
+        @media (max-width: em(632)){
+        }
+    }
+
+    // .line1-requisites__blocks
+
+    &__blocks {
+        display: flex;
+        gap: 14px;
+    }
+
+    // .line1-requisites__blocks-row
+
+    &__blocks-row {
+    }
+}

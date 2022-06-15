@@ -1,0 +1,119 @@
+.sciens {
+
+    // .sciens__container
+
+    &__container {
+        max-width: 1260px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+
+    // .sciens__block
+
+
+		// .sciens__title
+
+		&__title {
+            display: flex;
+            justify-content: center;
+            margin: 82px 0px 51px 0px;
+            font-weight: 500;
+            font-size: rem(24);
+            line-height: math.div(30 ,24 );
+            color: $MainColorBlue;
+		}
+
+
+}
+.block-sciens {
+    padding: 63px 74px 55px 75px;
+    border: 0.2px solid #FFFFFF;
+    box-shadow: inset 0px 0px 3px rgba(50, 87, 164, 0.25);
+    border-radius: 15px;
+    @media (max-width: em(435)){
+        padding: 63px 5px 55px 5px;
+    }
+    // .block-sciens__body
+
+    &__body {
+    }
+
+    // .block-sciens__title
+
+    &__title {
+        font-weight: 500;
+        @include adaptiveValue("font-size",36 ,20 );
+        line-height: math.div(45 ,36 );
+        color: $MainColorBlue;
+        margin: 0px 0px 17px 0px;
+    }
+
+    // .block-sciens__text
+
+    &__text {
+        margin: 0px 0px 53px 0px;
+        font-size: rem(18);
+        line-height: math.div(23 ,18 );
+    }
+
+    // .block-sciens__row
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px 0px 0px;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    // .block-sciens__row-left
+
+    &__row-left {
+        flex: 0 1 631px;
+    }
+
+    // .block-sciens__title2
+
+    &__title2 {
+        font-weight: 500;
+        @include adaptiveValue("font-size",22 ,18 );
+        line-height: math.div(28 ,22 );
+        margin: 0px 0px 10px 0px;
+    }
+
+    // .block-sciens__row-right
+
+    &__row-right {
+    }
+
+    // .block-sciens__img
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    // .block-sciens__footer
+
+    &__footer {
+        margin: 83px 0px 0px 0px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    // .block-sciens__footer-block
+
+    &__footer-block {
+        display: flex;
+        flex: 0 1 262px;
+        justify-content: space-between;
+    }
+
+    // .block-sciens__footer-title
+
+    &__footer-title {
+        line-height: math.div(18 ,14 );
+        color: #C41C1B;
+    }
+}

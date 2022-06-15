@@ -1,0 +1,216 @@
+.decoration {
+    margin: 28px 0px 0px 0px;
+
+    // .decoration__container
+
+    &__container {
+        max-width: 1134px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+
+    // .decoration__line-basket
+
+    &__line-basket {
+        margin: 0px 0px 54px 0px;
+        display: flex;
+    }
+
+    // .decoration__ic
+
+    &__ic {
+        @extend %ic;
+        @extend ._icon-arrow-right;
+    }
+
+    // .decoration__title-ic
+
+    &__title-ic {
+        font-weight: 400;
+        font-size: rem(12);
+    }
+
+    // .decoration__body
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: em(871)){
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+    }
+
+    // .decoration__left-block
+}
+.decoration-left {
+
+    // .decoration-left__body
+
+    &__body {
+    }
+
+    // .decoration-left__title
+
+    &__title {
+        font-weight: 500;
+        font-size: rem(24);
+        line-height: math.div(30 ,24 );
+        color: $MainColorBlue;
+        margin: 0px 0px 56px 0px;
+    }
+
+    // .decoration-left__footer-check
+
+    &__footer-check {
+        margin: 15px 0px 30px 0px;
+        font-weight: 400;
+        color: $MainColorBlue;
+    }
+
+    // .decoration-left__block-button
+
+    &__block-button {
+        margin: 0px 0px 23px 0px;
+    }
+
+    // .decoration-left__button
+
+    &__button {
+        width: 222px;
+        height: 41px;
+        color: white;
+        font-weight: 500;
+        background-color: #3257A4;
+        box-shadow: 0px 0px 3px #1A3E8B, inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+
+    // .decoration-left__footer
+
+    &__footer {
+        font-weight: 400;
+
+    }
+}
+
+.decoration-checkbox {
+
+    // .line-checkbox__input
+
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        
+            
+    }
+    &__input:focus + &__label{
+    }
+    &__input:checked + &__label::before{
+        background-color: #3257A4;
+        cursor: pointer;
+    }
+
+    // .line-checkbox__label
+
+    &__label {
+        line-height: 110%;
+        font-size: rem(18);
+        display: flex;
+        font-weight: 400;
+        align-items: center;
+        cursor: pointer;
+        gap: 10px;
+        &::before{
+            content:'';
+            flex: 0 1 11px;
+            height: 11px;
+            border: 0.5px solid #3257A4;
+            border-radius: 1px;
+        }
+    }
+
+    // .line-checkbox__text
+
+    &__text {
+    }
+}
+.decoration-right {
+
+    // .decoration-right__body
+
+    &__body {
+    }
+
+    // .decoration-right__title
+
+    &__title {
+        font-weight: 500;
+        font-size: rem(24);
+        line-height: math.div(30 ,24 );
+        color: $MainColorBlue;
+        margin: 0px 0px 43px 0px;
+    }
+
+    // .decoration-right__block-input
+
+    &__block-input {
+    }
+
+    // .decoration-right__input
+
+    &__input {
+        width: 472px;
+        height: 63px;
+        box-shadow: inset 0px 0px 3px rgba(50, 87, 164, 0.25);
+        border-radius: 15px;
+        margin: 0px 0px 23px 0px;
+        outline-color: #3257A4;
+        padding: 0px 0px 0px 23px;
+        font-weight: 400;
+        &::placeholder{
+            color: black;
+        }
+        @media (max-width: em(515)){
+            width: 372px;
+        }
+    }
+
+    // .decoration-right__footer-input
+
+    &__footer-input {
+        display: flex;
+        justify-content: flex-end;
+        font-size: rem(10);
+        font-weight: 400;
+        margin: 0px 0px 11px 0px;
+        cursor: pointer;
+    }
+
+    // .decoration-right__block-button
+
+    &__block-button {
+        margin: 0px 0px 19px 0px;
+    }
+
+    // .decoration-right__button
+
+    &__button {
+        width: 140px;
+        height: 41px;
+        background-color: #3257A4;
+        color: white;
+        box-shadow: 0px 0px 3px #1A3E8B, inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+
+    // .decoration-right__footer-title
+
+    &__footer-title {
+        font-weight: 400;
+
+    }
+}

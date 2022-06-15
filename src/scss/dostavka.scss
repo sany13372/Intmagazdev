@@ -1,0 +1,312 @@
+.delivery {
+    margin: 15px 0px 0px 0px;
+
+    // .delivery__container
+
+    &__container {
+        max-width: 1255px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+
+    // .delivery__titile
+
+    &__titile {
+        display: flex;
+        justify-content: center;
+        margin: 0px 0px 55px 0px;
+        font-weight: 500;
+        font-size: rem(24);
+        line-height: math.div(30 ,24 );
+        color: $MainColorBlue;
+    }
+
+    // .delivery__body
+
+}
+.body-delivery {
+
+    // .body-delivery__line
+
+    &__line {
+        display: flex;
+        align-items: center;
+        gap: 19px;
+        margin: 0px 0px 33px 0px;
+    }
+
+    // .body-delivery__block-ic
+
+    &__block-ic {
+    }
+
+    // .body-delivery__title
+
+    &__title {
+        font-weight: 500;
+        line-height: math.div(23 ,18 );
+        font-size: rem(18);
+
+    }
+
+    // .body-delivery__block-img
+
+    &__block-img {
+        display: flex;
+        justify-content: center;
+        margin: 0px 0px 83px 0px;
+    }
+
+    // .body-delivery__img
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+        border: 1px solid #497AE2;
+    }
+
+    // .body-delivery__text
+
+    &__text {
+        font-size: rem(18);
+        line-height: math.div(23 ,18 );
+    }
+}
+//========================================================================================================================================================
+.delivery-kalkulator {margin: 40px 0px 0px 0px;
+
+    // .delivery-kalkulator__container
+
+    &__container {
+        max-width: 1178px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+
+    // .delivery-kalkulator__block
+
+    &__block {
+    }
+
+    // .delivery-kalkulator__body-block
+
+}
+.block-body {
+    padding: 27px 100px 58px 72px;
+    border: 1px solid #497AE2;
+    box-shadow: 0px 10px 30px rgba(73, 122, 226, 0.1);
+    border-radius: 15px;
+    font-family: 'Geometria';
+    @media (max-width: em(750)){
+        padding: 27px 15px 58px 15px;
+    }
+
+    // .block-body__title
+
+    &__title {
+        margin: 0px 0px 65px 0px;
+        font-weight: 500;
+        font-size: rem(18);
+        line-height: math.div(23 ,18 );
+        color: $MainColorBlue;
+    }
+
+    // .block-body__line-input
+
+    &__line-input {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0px 0px 37px 0px;
+        @media (max-width: em(976)){
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+
+    // .block-body__block-input
+
+    &__block-input {
+    }
+
+    // .block-body__input
+
+    &__input {
+        width: 390px;
+        height: 35px;
+        box-shadow: inset 0px 0px 3px rgba(50, 87, 164, 0.25);
+        border-radius: 10px;
+        padding: 0px 0px 0px 10px;
+        outline-color: #497AE2;
+        @media (max-width: em(434)){
+            width: 290px;
+        }
+        &::placeholder{
+            color: $mainColor;
+        }
+    }
+
+    // .block-body__input2
+
+    &__input2 {
+    }
+
+    // .block-body__line-center
+
+    &__line-center {
+        display: flex;
+        @include adaptiveValue("gap",90 ,20 );
+        @media (max-width: em(620)){
+            flex-wrap: wrap;
+            gap: 0px;
+        }
+    }
+
+    // .block-body__left
+
+    &__left {
+        flex: 1 1 auto;
+    }
+
+    // .block-body__line-titles
+
+    &__line-titles {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 0px 10px 0px;
+    }
+
+    // .block-body__titles
+
+    &__titles {
+        font-size: rem(14);
+        line-height: math.div(18 ,14 );
+        color: $mainColor;
+    }
+
+    // .block-body__kalkulator-line
+
+    &__kalkulator-line {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 0px 40px 0px;
+    }
+
+    // .block-body__kalkulator-mass
+
+
+
+    // .block-body__right
+
+    &__right {
+        @media (max-width: em(620)){
+            margin: 0px 0px 20px 0px;
+        }
+    }
+
+    // .block-body__block-button
+
+    &__block-button {
+
+    }
+
+    // .block-body__button
+
+    &__button {
+        width: 204px;
+        height: 47px;
+        background: #3257A4;
+        box-shadow: 0px 0px 3px #1A3E8B, inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        color: white;
+    }
+}
+.mass-kalkulator {
+    display: flex;
+    justify-content: space-around;
+    width: 84px;
+    height: 28px;
+    align-items: center;
+    box-shadow: inset 0px 0px 3px rgba(50, 87, 164, 0.25);
+    border-radius: 5px;
+    color: $MainColorBlack;
+    @media (max-width: em(454)){
+        width: 60px;
+    }
+    // .mass-kalkulator__plus
+
+    &__plus {
+        position: relative;
+        width: 9px;
+        height: 26px;
+        cursor: pointer;
+        &::after{
+            content:'';
+            position: absolute;
+            top: 50%;
+            display: block;
+            width: 9px;
+            background-color: $mainColor;
+            height: 1px;
+        }
+    }
+
+    // .mass-kalkulator__title
+
+    &__title {
+        font-size: rem(12);
+    }
+
+    // .mass-kalkulator__munes
+
+    &__munes {
+        position: relative;
+        width: 9px;
+        height: 26px;
+        cursor: pointer;
+        &::after{
+            content:'';
+            position: absolute;
+            top: 50%;
+            display: block;
+            width: 9px;
+            background-color: $mainColor;
+            height: 1px;
+        }
+        &::before{
+            content:'';
+            position: absolute;
+            top: 50%;
+            display: block;
+            width: 9px;
+            background-color: $mainColor;
+            height: 1px;
+            transform: rotate(90deg);
+        }
+    }
+}
+.leftblock-body {
+
+    // .leftblock-body__checkbox-line
+
+    &__checkbox-line {
+    }
+}
+.checkbox {
+
+    // .checkbox__input
+
+    &__input {
+    }
+
+    // .checkbox__label
+
+    &__label {
+    }
+
+    // .checkbox__text
+
+    &__text {
+    }
+}

@@ -1,0 +1,33 @@
+.glavn {
+
+    // .glavn__container
+
+    &__container {
+        max-width: 1210px;
+        padding: 51px 15px 0px 15px;
+        display: flex;
+    }
+
+    // .glavn__title
+
+    &__title {
+        padding: 0px 0px 30px 0px;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    // .glavn__link
+
+    &__link {
+        color: $MainColorBlue;
+        line-height: math.div(18 ,14 );
+    }
+
+    // .glavn__title1
+
+    &__title1 {
+    }
+    &__title3 {
+        margin: 0px 0px 0px 0px;
+    }
+}

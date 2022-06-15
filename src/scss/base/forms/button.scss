@@ -1,0 +1,29 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	padding: 0px 0px;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color:white ;
+			color:#3257A4 ;
+			transition: all 0.4s ease-in-out;
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}
+.button1{
+	padding: 0px 0px;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color:#3257A4 ;
+			color:white ;
+			transition: all 0.4s ease-in-out;
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}

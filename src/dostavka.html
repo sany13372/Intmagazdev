@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+        <div class="wrapper">
+			@@include('html/_header.htm',{})
+            <main class="page">
+                <section class="glavn">
+                    <div class="glavn__container">
+                        <div class="glavn__title">Главная</div>
+                        <a href="" class="glavn__link"><div class="glavn__ic1"></div><div class="glavn__title3">Доставка</div> </a>
+                    </div>
+                </section>
+                <section class="delivery">
+                    <div class="delivery__container">
+                        <h3 class="delivery__titile">Доставка заказа</h3>
+                        <div class="delivery__body body-delivery">
+                            <div class="body-delivery__line">
+                                <div class="body-delivery__block-ic"><img src="@img/icons/46.png" alt="Иконка"></div>
+                                <h3 class="body-delivery__title">Самовывоз со склада по адресу: УР, г. Ижевск, ул. Пушкинская 290.</h3>
+                            </div>
+                            <div class="body-delivery__block-img"><img src="@img/35.png" class="body-delivery__img" alt="Картинка"></div>
+                            <div class="body-delivery__line">
+                                <div class="body-delivery__block-ic"><img src="@img/icons/4.png" alt="Иконка"></div>
+                                <h3 class="body-delivery__title">Доставка ведущими Транспортными компаниями</h3>
+                            </div>
+                            <div class="body-delivery__text">Мы осуществляем доставку любыми транспортными компаниями: Деловые Линии, СДЭК, ПЭК, по установленным тарифам 
+                                <br> на перевозки. При необходимости осуществляем индивидуальную доставку через другие службы доставки.</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="delivery-kalkulator">
+                    <div class="delivery-kalkulator__container">
+                        <form action="" class="delivery-kalkulator__form">
+                        <div class="delivery-kalkulator__block">
+                            <div class="delivery-kalkulator__body-block block-body">
+                                <h3 class="block-body__title">Онлайн-калькулятор стоимости доставки</h3>
+                                <div class="block-body__line-input">
+                                    <div class="block-body__block-input"><input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="город отправитель" class="block-body__input"></div>
+                                    <div class="block-body__block-input"><input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="город получатель" class="block-body__input"></div>
+                                </div>
+                                <div class="block-body__line-center">
+                                    <div class="block-body__left">
+                                    <div class="block-body__line-titles">
+                                    <h3 class="block-body__titles">Вес:</h3>
+                                    <h3 class="block-body__titles">Длина:</h3>
+                                    <h3 class="block-body__titles">Ширина:</h3>
+                                    <h3 class="block-body__titles">Высота:</h3>
+                                    </div>
+                                    <div class="block-body__kalkulator-line">
+                                        <div class="block-body__kalkulator-mass mass-kalkulator">
+                                            <div class="mass-kalkulator__plus"></div>
+                                            <div class="mass-kalkulator__title">кг</div>
+                                            <div class="mass-kalkulator__munes"></div>
+                                        </div>
+                                        <div class="block-body__kalkulator-mass mass-kalkulator">
+                                            <div class="mass-kalkulator__plus"></div>
+                                            <div class="mass-kalkulator__title">кг</div>
+                                            <div class="mass-kalkulator__munes"></div>
+                                        </div>
+                                        <div class="block-body__kalkulator-mass mass-kalkulator">
+                                            <div class="mass-kalkulator__plus"></div>
+                                            <div class="mass-kalkulator__title">кг</div>
+                                            <div class="mass-kalkulator__munes"></div>
+                                        </div>
+                                        <div class="block-body__kalkulator-mass mass-kalkulator">
+                                            <div class="mass-kalkulator__plus"></div>
+                                            <div class="mass-kalkulator__title">кг</div>
+                                            <div class="mass-kalkulator__munes"></div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="block-body__right">
+                                    <div class="leftblock-body__checkbox-line">
+                                    <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                    <label for="c_1" class="checkbox__label"><span class="checkbox__text">доставка до пункта выдачи заказов </span></label>
+                                </div>
+                                    <div class="leftblock-body__checkbox-line">
+                                    <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                    <label for="c_2" class="checkbox__label"><span class="checkbox__text">доставка курьером до двери</span></label>
+                                </div>
+                                    </div>
+                                </div>
+                                <div class="block-body__block-button">
+                                    <button class="block-body__button button">расчет</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+		@@include('html/_popup1.htm',{})
+	</body>
+</html>

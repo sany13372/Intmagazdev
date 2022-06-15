@@ -1,0 +1,114 @@
+.pay {
+    margin: 15px 0px 0px 0px;
+
+    // .pay__container
+
+    &__container {
+        max-width: 1260px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+
+    // .pay__title
+
+    &__title {
+        font-weight: 500;
+        font-size: rem(24);
+        line-height: math.div(30 ,24 );
+        display: flex;
+        justify-content: center;
+        color: $MainColorBlue;
+        margin: 0px 0px 52px 0px;
+    }
+
+    // .pay__body
+
+    &__body {
+    }
+
+    // .pay__line1
+
+    &__line1 {
+        display: flex;
+        gap: 14px;
+        @media (max-width: em(716)){
+            flex-wrap: wrap;
+        }
+    }
+
+    // .pay__block
+
+    &__block {
+        flex: 1 1;
+        padding: 33px 42px 31px 38px;
+        box-shadow: 0px 20px 50px rgba(73, 122, 226, 0.2), inset 0px 0px 3px rgba(50, 87, 164, 0.25);
+        border-radius: 15px;
+        font-size: rem(18);
+        line-height: math.div(23 ,18 );
+    }
+		// .pay__line-document
+
+		&__line-document {
+		}
+}
+.document-line {
+    display: flex;
+    justify-content: center;
+    margin: 115px 0px 0px 0px;
+
+    // .document-line__block
+
+    &__block {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    // .document-line__body
+
+    &__body {
+        position: relative;
+        padding: 8px 0px 0px 0px;
+    }
+
+    // .document-line__input
+
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
+    // .document-line__label
+
+    &__label {
+        padding: 0px 0px 0px 26px;
+    }
+
+    // .document-line__text
+
+    &__text {
+        font-size: rem(14);
+        font-weight: 500;
+        line-height: math.div(18 ,14 );
+        text-decoration-line: underline;
+        color: #111111;
+        
+    }
+		// .document-line__block-img
+
+		&__block-img {
+		}
+
+		// .document-line__img
+
+		&__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+		}
+
+
+}

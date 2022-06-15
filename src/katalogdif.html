@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+            <main class="page">
+                <section class="glavn">
+                    <div class="glavn__container">
+                        <div class="glavn__title">Главная</div>
+                        <div class="glavn__ic1"></div><div class="glavn__title2"> Каталог</div>
+                        <a href="" class="glavn__link"><div class="glavn__ic1"></div><div class="glavn__title2"> Дефибриляторы</div></a>
+                        
+                    </div>
+            </section>
+            <section class="dif">
+                <div class="dif">
+                    <div class="dif__container">
+                        <h3 class="dif__title">Дефибриляторы </h3>
+                        <div class="dif__line1">
+                            <div class="dif__block-line">
+                            <h3 class="dif__search">Найдено 14 моделей</h3>
+                            <h3 class="dif__reload">Сбросить фильтр</h3>
+                            </div>
+                            <div data-spollers class="dit__spoller spoller-dit">
+                                <div class="spoller-dit__item">
+                                    <button type="button" data-spoller class="spoller-dit__title">Новинки</button>
+                                    <div class="spoller-dit__body">
+                                        <ul class="spoller-dit__list">
+                                            <li class="spoller-dit__list1">Новинки</li>
+                                            <li class="spoller-dit__list1">Популярные</li>
+                                            <li class="spoller-dit__list1"> По увеличению цены</li>
+                                            <li class="spoller-dit__list1">По уменьшению цены</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dif__body body-dif">
+                            <div class="body-dif__blockleft leftblock-body">
+                                <div class="leftblock-body__body">
+                                    <div class="leftblock-body__line1">
+                                        <h3 class="leftblock-body__title">Цена от</h3>
+                                        <h3 class="leftblock-body__title1">Цена до</h3>
+                                    </div>
+                                    <div class="leftblock-body__line2">
+                                        <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="0₽" class="leftblock-body__price-input">
+                                        <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="250 000₽" class="leftblock-body__price-input2">
+                                    </div>
+                                    <h3 class="leftblock-body__purpose">Назначение </h3>
+                                    <div class="leftblock-body__checkbox">
+                                        <div class="leftblock-body__checkbox-line">
+                                                <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_1" class="checkbox__label"><span class="checkbox__text">Промышленные предприятия</span></label>
+                                        </div>
+                                        <div class="leftblock-body__checkbox-line">
+                                                <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="2" name="form[]">
+                                                <label for="c_2" class="checkbox__label"><span class="checkbox__text">Общественные здания </span></label>
+                                        </div>
+                                        <div class="leftblock-body__checkbox-line">
+                                                <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_3" class="checkbox__label"><span class="checkbox__text"> Дома престорелых </span></label>
+                                        </div>
+                                        <div class="leftblock-body__checkbox-line">
+                                                <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_4" class="checkbox__label"><span class="checkbox__text">Спортивные учреждения </span></label>
+                                        </div>
+                                        <div class="leftblock-body__checkbox-line">
+                                                <input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_5" class="checkbox__label"><span class="checkbox__text">Мед.пункты</span></label>
+                                        </div>
+                                        <div class="leftblock-body__checkbox-line">
+                                                <input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_6" class="checkbox__label"><span class="checkbox__text">Больница</span></label>
+                                        </div>
+                                        <div class="leftblock-body__checkbox-line">
+                                                <input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_7" class="checkbox__label"><span class="checkbox__text">Полиция </span></label>
+                                        </div>
+                                        <div class="leftblock-body__checkbox-line">
+                                                <input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_8" class="checkbox__label"><span class="checkbox__text">Служба спасения </span></label>
+                                        </div>
+                                        <div class="leftblock-body__checkbox-line">
+                                                <input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_9" class="checkbox__label"><span class="checkbox__text">Пожарная</span></label>
+                                        </div>
+                                        <div class="leftblock-body__checkbox-line">
+                                                <input id="c_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                <label for="c_10" class="checkbox__label"><span class="checkbox__text">ССМП</span></label>
+                                        </div>
+                                    </div>
+                                    <h3 class="leftblock-body__work">Способ работы </h3>
+                                    <div class="leftblock-body__checkbox">
+                                        <div class="leftblock-body__checkbox-line">
+                                            <input id="c_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                            <label for="c_11" class="checkbox__label"><span class="checkbox__text">Автоматический </span></label>
+                                    </div>
+                                        <div class="leftblock-body__checkbox-line">
+                                            <input id="c_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                            <label for="c_12" class="checkbox__label"><span class="checkbox__text">Ручное управление</span></label>
+                                    </div>
+                                        <div class="leftblock-body__checkbox-line">
+                                            <input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                            <label for="c_13" class="checkbox__label"><span class="checkbox__text">Комбинированный</span></label>
+                                    </div>
+                                    </div>
+                                    <h3 class="leftblock-body__display">Дисплей</h3>
+                                    <div class="leftblock-body__checkbox">
+                                    <div class="leftblock-body__checkbox-line">
+                                        <input id="c_14" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_14" class="checkbox__label"><span class="checkbox__text">Наличие дисплея </span></label>
+                                </div>
+                                    </div>
+                                    <h3 class="leftblock-body__display">Физиологические сигналы</h3>
+                                    <div class="leftblock-body__checkbox">
+                                    <div class="leftblock-body__checkbox-line">
+                                        <input id="c_15" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_15" class="checkbox__label"><span class="checkbox__text">1 - канальный ЭКГ</span></label>
+                                    </div>
+                                    <div class="leftblock-body__checkbox-line">
+                                        <input id="c_16" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_16" class="checkbox__label"><span class="checkbox__text">6 - канальный ЭКГ</span></label>
+                                    </div>
+                                    <div class="leftblock-body__checkbox-line">
+                                        <input id="c_17" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_17" class="checkbox__label"><span class="checkbox__text">Пульксосимметрия</span></label>
+                                    </div>
+                                    <div class="leftblock-body__checkbox-line">
+                                        <input id="c_18" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_18" class="checkbox__label"><span class="checkbox__text">Электрокардио-стимуляция</span></label>
+                                    </div>
+                                    <div class="leftblock-body__checkbox-line">
+                                        <input id="c_19" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_19" class="checkbox__label"><span class="checkbox__text">Пульксосимметрия + ЭКС</span></label>
+                                    </div>
+                                    </div>
+                                    <h3 class="leftblock-body__display">Энергоснабжение</h3>
+                                    <div class="leftblock-body__checkbox">
+                                    <div class="leftblock-body__checkbox-line">
+                                        <input id="c_20" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_20" class="checkbox__label"><span class="checkbox__text">Батарея на 3 года  </span></label>
+                                </div>
+                                    <div class="leftblock-body__checkbox-line">
+                                        <input id="c_21" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_21" class="checkbox__label"><span class="checkbox__text">Батарея на 5 лет </span></label>
+                                </div>
+                                    <div class="leftblock-body__checkbox-line">
+                                        <input id="c_22" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_22" class="checkbox__label"><span class="checkbox__text">AkuPak (аккумуляторная) </span></label>
+                                </div>
+                                    </div>
+                                    <h3 class="leftblock-body__display">Язык управления</h3>
+                                    <div class="leftblock-body__checkbox">
+                                    <div class="leftblock-body__checkbox-line">
+                                        <input id="c_23" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_23" class="checkbox__label"><span class="checkbox__text">Русский  </span></label>
+                                </div>
+                                    <div class="leftblock-body__checkbox-line">
+                                        <input id="c_24" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_24" class="checkbox__label"><span class="checkbox__text">Несколько </span></label>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body-dif__blockright blockright-body">
+                                <div class="blockright-body__body">
+                                    <div class="blockright-body__row1">
+                                        @@include('html/_car.htm',{})
+                                        @@include('html/_car.htm',{})
+                                        @@include('html/_car.htm',{})
+                                    </div>
+                                    <div class="blockright-body__row1">
+                                        @@include('html/_car.htm',{})
+                                        @@include('html/_car.htm',{})
+                                        @@include('html/_car.htm',{})
+                                    </div>
+                                    <div class="blockright-body__row1">
+                                        @@include('html/_car.htm',{})
+                                        @@include('html/_car.htm',{})
+                                        @@include('html/_car.htm',{})
+                                    </div>
+                                    <div class="blockright-body__row1">
+                                        <div class="blockright-body__wraper" hidden>
+                                            <article class="cart-medical medical-cart">
+                                                <a href="karttovara.html">
+                                                <div class="medical-cart__body body">
+                                                    <div class="body__rating1">
+                                                    <div class="rating rating_set">
+                                                        <div class="rating__body">
+                                                            <div class="rating__active"></div>
+                                                            <div class="rating__items">
+                                                                <input type="radio" class="rating__item" value="1" name="rating">
+                                                                <input type="radio" class="rating__item" value="2" name="rating">
+                                                                <input type="radio" class="rating__item" value="3" name="rating">
+                                                                <input type="radio" class="rating__item" value="4" name="rating">
+                                                                <input type="radio" class="rating__item" value="5" name="rating">
+                                                            </div>
+                                                        </div>
+                                                        <div class="rating__value"></div>
+                                                    </div>
+                                                </div>
+                                                    <div class="body__block-img"><img src="@img/13.png" class="body__img" alt="Картинка"></div>
+                                                    <div class="body__text">
+                                                        <h3 class="body__title">арт. 97530</h3>
+                                                        <h3 class="body__title1"> Автоматический дефибриллятор primedic heartsave pad </h3>
+                                                        <h3 class="body__price">136 000₽</h3>
+                                                        <div class="body__buttons">
+                                                            <button class="body__button1 button">в корзину</button>
+                                                            <button class="body__button2 button1">купить</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            </article>
+                                        </div>
+                                        <div class="blockright-body__wraper" hidden>
+                                            <article class="cart-medical medical-cart">
+                                                <a href="karttovara.html">
+                                                <div class="medical-cart__body body">
+                                                    <div class="body__rating1">
+                                                    <div class="rating rating_set">
+                                                        <div class="rating__body">
+                                                            <div class="rating__active"></div>
+                                                            <div class="rating__items">
+                                                                <input type="radio" class="rating__item" value="1" name="rating">
+                                                                <input type="radio" class="rating__item" value="2" name="rating">
+                                                                <input type="radio" class="rating__item" value="3" name="rating">
+                                                                <input type="radio" class="rating__item" value="4" name="rating">
+                                                                <input type="radio" class="rating__item" value="5" name="rating">
+                                                            </div>
+                                                        </div>
+                                                        <div class="rating__value"></div>
+                                                    </div>
+                                                </div>
+                                                    <div class="body__block-img"><img src="@img/13.png" class="body__img" alt="Картинка"></div>
+                                                    <div class="body__text">
+                                                        <h3 class="body__title">арт. 97530</h3>
+                                                        <h3 class="body__title1"> Автоматический дефибриллятор primedic heartsave pad </h3>
+                                                        <h3 class="body__price">136 000₽</h3>
+                                                        <div class="body__buttons">
+                                                            <button class="body__button1 button">в корзину</button>
+                                                            <button class="body__button2 button1">купить</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            </article>
+                                        </div>
+                                        <div class="blockright-body__wraper" hidden>
+                                            <article class="cart-medical medical-cart">
+                                                <a href="karttovara.html">
+                                                <div class="medical-cart__body body">
+                                                    <div class="body__rating1">
+                                                    <div class="rating rating_set">
+                                                        <div class="rating__body">
+                                                            <div class="rating__active"></div>
+                                                            <div class="rating__items">
+                                                                <input type="radio" class="rating__item" value="1" name="rating">
+                                                                <input type="radio" class="rating__item" value="2" name="rating">
+                                                                <input type="radio" class="rating__item" value="3" name="rating">
+                                                                <input type="radio" class="rating__item" value="4" name="rating">
+                                                                <input type="radio" class="rating__item" value="5" name="rating">
+                                                            </div>
+                                                        </div>
+                                                        <div class="rating__value"></div>
+                                                    </div>
+                                                </div>
+                                                    <div class="body__block-img"><img src="@img/13.png" class="body__img" alt="Картинка"></div>
+                                                    <div class="body__text">
+                                                        <h3 class="body__title">арт. 97530</h3>
+                                                        <h3 class="body__title1"> Автоматический дефибриллятор primedic heartsave pad </h3>
+                                                        <h3 class="body__price">136 000₽</h3>
+                                                        <div class="body__buttons">
+                                                            <button class="body__button1 button">в корзину</button>
+                                                            <button class="body__button2 button1">купить</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            </article>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="comapany__block-button"><button id="company-but" class="comapany__button">показать еще <div class="comapany__ico1"></div> </button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </main>
+            @@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+        @@include('html/_popup1.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

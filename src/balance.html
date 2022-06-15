@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+            <main class="page">
+                <section class="glavn">
+                    <div class="glavn__container">
+                        <h3 class="glavn__title">Главная</h3>
+                        <a href="" class="glavn__link"><div class="glavn__ic1"></div><div class="glavn__title2">Каталог</div></a>
+                    </div>
+                </section>
+                <section class="balance">
+                        <div class="balance__container">
+                            <h3 class="balance__title">Сравнение товаров</h3>
+                            <div class="balance__row">
+                            <a href="balansinfo.html">
+                                <div class="balance__block block-balance">
+                                        <div class="block-balance__left">
+                                        <h3 class="block-balance__title">ДЕФИБРИЛЯТОРЫ</h3>
+                                        <h3 class="block-balance__title1"><a href="balansinfo.html" class="block-balance__link">перейти к сравнению</a> <div class="block-balance__linkic"></div></h3>
+                                        </div>
+                                        <div class="block-balance__img"><img src="@img/50.png" alt="Картинка" class="block-balance__img1"></div>
+                                </div>
+                            </a>
+                                <div class="balance__block block-balance">
+                                        <div class="block-balance__left">
+                                        <h3 class="block-balance__title">МЕДИЦИНСКИЙ <br> ИНСТРУМЕНТ</h3>
+                                        <h3 class="block-balance__title1"><a href="katalogdif.html" class="block-balance__link">перейти к сравнению</a> <div class="block-balance__linkic"></div></h3>
+                                    </div>
+                                        <div class="block-balance__img"><img src="@img/51.png" alt="Картинка" class="block-balance__img1"></div>
+                                </div>
+                                <div class="balance__block block-balance">
+                                        <div class="block-balance__left">
+                                        <h3 class="block-balance__title">Импланты</h3>
+                                        <h3 class="block-balance__title1"><span>перейти к сравнению </span> <div class="block-balance__linkic"></div></h3>
+                                    </div>
+                                        <div class="block-balance__img"><img src="@img/52.png" alt="Картинка" class="block-balance__img1"></div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </main>
+            @@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+        @@include('html/_popup1.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

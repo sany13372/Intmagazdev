@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="primedic">
+					<div class="primedic__container">
+						<div class="primedic__slider">
+							<div class="primedic__swiper">
+								<div class="primedic__slide">
+									<div class="primedic__blockleft left-block">
+										<div class="left-block__line1"><img src="@img/20.png" alt=""></div>
+										<h3 class="left-block__title1">Ручные и автоматические дефибрилляторы «Primedic»</h3>
+										<p class="left-block__text">что то нужно написать, может быть качество и выгодные цены..</p>
+										<div class="left-block__button"><a href="#" class="left-block__but">перейти в каталог</a></div>
+										<div class="primedic__swipe-next"></div>
+										<div class="primedic__swipe-lock"></div>
+									</div>
+									<div class="primedic__blockright right-block">
+										<img src="@img/27.png" class="right-block__img" alt="Картинка">
+									</div>
+								</div>
+								<div class="primedic__slide">
+									<div class="primedic__blockleft left-block">
+										<div class="left-block__line1"><img src="@img/20.png" alt=""></div>
+										<h3 class="left-block__title1">Хирургические сшивающие аппараты «Panther»</h3>
+										<p class="left-block__text">Cтоят в одном ряду с аппаратами известных мировых производителей</p>
+										<div class="left-block__button"><a href="#" class="left-block__but">Подробнее</a></div>
+										<div class="primedic__swipe-next"></div>
+										<div class="primedic__swipe-lock"></div>
+									</div>
+									<div class="primedic__blockright right-block">
+										<img src="@img/27.png" class="right-block__img" alt="Картинка">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				@@include('html/_kart.htm',{})
+				<section class="novinki">
+					<div class="novinki__container">
+						<h3 class="novinki__title">Новинки</h3>
+						<div class="novinki__body body-novinki">
+							<div class="body-novinki__naviglast"></div>
+							<div class="body-novinki__slider">
+								<div class="body-novinki__swiper">
+									<div class="body-novinki__slide">
+										@@include('html/_car.htm',{})
+									</div>
+									<div class="body-novinki__slide">
+										@@include('html/_car1.htm',{})
+									</div>
+									<div class="body-novinki__slide">
+										@@include('html/_car2.htm',{})
+									</div>
+									<div class="body-novinki__slide">
+										@@include('html/_car3.htm',{})
+									</div>
+									<div class="body-novinki__slide">
+										@@include('html/_car.htm',{})
+									</div>
+									<div class="body-novinki__slide">
+										@@include('html/_car1.htm',{})
+									</div>
+									<div class="body-novinki__slide">
+										@@include('html/_car2.htm',{})
+									</div>
+									<div class="body-novinki__slide">
+										@@include('html/_car3.htm',{})
+									</div>
+									<div class="body-novinki__slide">
+										@@include('html/_car.htm',{})
+									</div>
+									<div class="body-novinki__slide">
+										@@include('html/_car1.htm',{})
+									</div>
+									<div class="body-novinki__slide">
+										@@include('html/_car2.htm',{})
+									</div>
+									<div class="body-novinki__slide">
+										@@include('html/_car3.htm',{})
+									</div>
+								</div>
+							</div>
+							<div class="body-novinki__navignext"></div>
+						</div>
+					</div>
+				</section>
+				<section class="brend">
+					<div class="brend__container">
+						<h3 class="brend__title">Бренды и заводы производители</h3>
+						<div class="brend__block block">
+							<div class="block__body">
+								<div class="block__row1">
+									<div class="block__img-body">
+										<img src="@img/8.png" class="block__img" alt="Картинка">
+									</div>
+									<div class="block__img-body">
+										<img src="@img/9.png" class="block__img" alt="Картинка">
+									</div>
+									<div class="block__img-body">
+										<img src="@img/15.png" class="block__img" alt="Картинка">
+									</div>
+									<div class="block__img-body">
+										<img src="@img/16.png" class="block__img" alt="Картинка">
+									</div>
+									<div class="block__img-body">
+										<img src="@img/18.png" class="block__img" alt="Картинка">
+									</div>
+								</div>
+								<div class="block__row1">
+									<div class="block__img-body">
+										<img src="@img/19.png" class="block__img" alt="Картинка">
+									</div>
+									<div class="block__img-body">
+										<img src="@img/21.png" class="block__img" alt="Картинка">
+									</div>
+									<div class="block__img-body">
+										<img src="@img/23.png" class="block__img" alt="Картинка">
+									</div>
+									<div class="block__img-body">
+										<img src="@img/24.png" class="block__img" alt="Картинка">
+									</div>
+									<div class="block__img-body">
+										<img src="@img/25.png" class="block__img" alt="Картинка">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="news1">
+					<div class="news1__container">
+						<h3 class="news1__title">Последние новости </h3>
+						@@include('html/_news.htm',{})
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+		@@include('html/_popup1.htm',{})
+	</body>
+</html>

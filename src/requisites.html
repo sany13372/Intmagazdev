@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+        <div class="wrapper">
+			@@include('html/_header.htm',{})
+            <main class="page">
+                <section class="glavn">
+                    <div class="glavn__container">
+                        <div class="glavn__title">Главная</div>
+                        <a href="" class="glavn__link"><div class="glavn__ic1"></div><div class="glavn__title3">Реквизиты</div> </a>
+                    </div>
+                </section>
+                <section class="requisites">
+                    <div class="requisites__container">
+                        <h3 class="requisites__title">Реквизиты</h3>
+                        <div class="requisites__body">
+                            <div class="requisites__line1 line1-requisites">
+                                <div class="line1-requisites__block button1">
+                                    ИП 
+                                    <br> Богатырёв 
+                                    <br>Константин 
+                                    <br>Сергеевич
+                                </div>
+                                <div class="line1-requisites__blocks">
+                                    <div class="line1-requisites__blocks-row">
+                                        <div class="line1-requisites__block button1">Адрес регистрации: 426000, Удмуртская Респ, г. Ижевск</div>
+                                        <div class="line1-requisites__block button1">ИНН 183112400380</div>
+                                        <div class="line1-requisites__block button1">8 (3412) 65-08-77</div>
+                                    </div>
+                                    <div class="line1-requisites__blocks-row">
+                                        <div class="line1-requisites__block button1">ОГРНИП 311183116700040</div>
+                                        <div class="line1-requisites__block button1">Почтовый адрес: 426011 г. Ижевск, ул. Пушкинская, 290</div>
+                                        <div class="line1-requisites__block button1">+7 982 993 90 05</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="requisites__line2 line1-requisites">
+                                <div class="line1-requisites__block button1">
+                                    E-mail: 5078096@mail.ru
+                                </div>
+                                <div class="line1-requisites__block1 button1">
+                                    Осуществляем поставки по всей территории РФ и ближнего зарубежья.
+                                </div>
+                            </div>
+                    </div>
+                </section>
+                <section class="qustion">
+                    <div class="qustion__container">
+                        <div class="qustion__block">
+                            <form action="#" class="qustion__form">
+                                <div class="qustion__block-body  body-block-cont">
+                                    <h3 class=" body-block-cont__title">Задать вопрос</h3>
+                                    <div class=" body-block-cont__block-input input-block">
+                                        <div class="input-block__left">
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Как вас зовут?" class="input-block__email">
+                                            <input autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="E-mail" class="input-block__email">
+                                            <input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="+ 7 (___)-___-__-__" class="input-block__email">
+                                        </div>
+                                        <div class="input-block__right">
+                                            <textarea autocomplete="off" name="form[]" placeholder="Сообщение" data-error="Ошибка" class="input-block__text"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class=" body-block-cont__block-button">
+                                        <button class=" body-block-cont__button button">отправить</button>
+                                    </div>
+                                    <h3 class=" body-block-cont__title2">Нажимая на кнопку «отправить», я соглашаюсь с условиями.</h3>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+		@@include('html/_popup1.htm',{})
+	</body>
+</html>

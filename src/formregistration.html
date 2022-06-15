@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+            <main class="page">
+                <section class="glavn">
+                    <div class="glavn__container">
+                        <div class="glavn__title">Главная</div>
+                        <div class="glavn__ic1"></div><div class="glavn__title2">Корзина</div> 
+                        <div class="glavn__ic1"></div><div class="glavn__title2">Оформить заказ</div> 
+                        <a href="" class="glavn__link"><div class="glavn__ic1"></div><div class="glavn__title2">Регистрация </div> </a>
+                    </div>
+                </section>
+                <section class="formguest">
+                    <div class="formguest__container">
+                        <div class="formguest__block guestform-body">
+                            <form action="" class="formguest__form">
+                                <div class="guestform-body__body">
+                                    <div class="guestform-body__line1">
+                                        <h3 class="guestform-body__title">Создать учетную запись</h3>
+                                        <div class="guestform-body__block-img"><img src="@img/63.png" class="guestform-body__img" alt="Картинка"></div>
+                                    </div>
+                                    <div class="guestform-body__line-input">
+                                        <div class="guestform-body__block-input">
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="E-mail" class="guestform-body__input">
+                                        </div>  
+                                        <div class="guestform-body__block-input">
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя" class="guestform-body__input">
+                                        </div>
+                                    </div>
+                                    <div class="guestform-body__line-input">
+                                        <div class="guestform-body__block-input">
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Пароль" class="guestform-body__input">
+                                        </div>  
+                                        <div class="guestform-body__block-input">
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Фамилия" class="guestform-body__input">
+                                        </div>
+                                    </div>
+                                    <div class="guestform-body__line-input">
+                                        <div class="guestform-body__block-input">
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Подтверждение пароля" class="guestform-body__input">
+                                        </div>  
+                                        <div class="guestform-body__block-input">
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="+ 7 (___)-___-__-__" class="guestform-body__input">
+                                        </div>  
+                                    </div>
+                                    <div class="guestform-body__block-button"><button class="guestform-body__button button">отправить</button></div>
+                                    <div class="guestform-body__footer-title">Нажимая на кнопку «Отправить», я соглашаюсь с условиями.</div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.htm',{})
+        </div>
+        @@include('html/_popup.htm',{})
+        @@include('html/_popup1.htm',{})
+        @@include('html/_js.htm',{})
+    </body>
+    </html>

@@ -1,0 +1,321 @@
+.balance-product {
+
+    margin: 43px 0px 0px 0px;
+    // .balance-product__container
+
+    &__container {
+        max-width: 1367px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+
+    // .balance-product__title
+
+    &__title {
+        font-weight: 500;
+        font-size: rem(24);
+        line-height: math.div(30 ,24 );
+        color: $MainColorBlue;
+    }
+
+    // .balance-product__line-printer
+
+
+    // .balance-product__body
+
+    &__body {
+        display: flex;
+        gap: 20px;
+        @media (max-width: em(536)){
+            gap: 5px;
+        }
+    }
+
+    // .balance-product__block-left
+
+}
+.printer-line {
+
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 0px 57px 0px;
+    padding: 0px 0px 25px 0px;
+    border-bottom:  1px solid #3257A4;
+    // .printer-line__block-printer
+
+    &__block-printer {
+        display: flex;
+        gap: 9px;
+    }
+
+    // .printer-line__printer
+
+    &__printer {
+    }
+
+    // .printer-line__img
+
+    &__img {
+
+    }
+
+    // .printer-line__title
+
+    &__title {
+    }
+}
+.left-balance {
+    max-width: 390px;
+    
+    align-items: center;
+    box-shadow: inset 0px 1px 5px rgba(50, 87, 164, 0.25);
+    @media (max-width: em(469)){
+        display: none;
+    }
+
+    // .left-balance__title
+    &__body{
+        padding: 148px 106px 0px 106px;
+        @media (max-width: em(1306)){
+            padding: 148px 20px 0px 20px;
+        }
+        @media (max-width: em(536)){
+            padding: 148px 5px 0px 5px;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: rem(18);
+        line-height: math.div(23 ,18 );
+        text-transform: uppercase;
+        color: $MainColorBlue;
+        margin: 0px 0px 194px 0px;
+        @media (max-width: em(536)){
+            font-size: rem(14);
+        }
+    }
+
+    // .left-balance__list
+
+    &__list {
+    }
+
+    // .left-balance__item
+
+    &__item {
+        line-height: math.div(18 ,14 );
+        color: $MainColorBlack;
+        max-width: 250px;
+        margin: 0px 0px 30px 0px;
+        &:nth-child(3){
+            margin: 0px 0px 50px 0px;
+        }
+    }
+}
+.right-balance {
+    display: flex;
+    font-weight: 400;
+    justify-content: space-between;
+    @media (max-width: em(1140)){
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    // .right-balance__full-block
+
+    &__full-block {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 ;
+    }
+
+    // .right-balance__block
+
+    &__block {
+    }
+
+    // .right-balance__block-body
+
+    &__block-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 27px 96px 30px;
+        box-shadow: inset 0px 1px 5px rgba(50, 87, 164, 0.25);
+        border-radius: 15px;
+        @media (max-width: em(536)){
+            padding: 12px 5px 96px 5px;
+        }
+    }
+
+    // .right-balance__icon
+
+    &__icon {
+        position: relative;
+        margin: 0px 0px 10px 0px;
+        cursor: pointer;
+        &::after{
+            content:'';
+            position: absolute;
+            z-index: 3;
+            height: 1px;
+            width: 10px;
+            display: block;
+            background-color: $MainColorBlue;
+            transform: rotate(140deg);
+        }
+        &::before{
+            content:'';
+            content:'';
+            position: absolute;
+            z-index: 3;
+            height: 1px;
+            width: 10px;
+            display: block;
+            background-color: $MainColorBlue;
+            transform: rotate(-140deg);
+        }
+    }
+
+    // .right-balance__block-img
+
+    &__block-img {
+        position: relative;
+        margin: 0px 0px 10px 0px;
+    }
+
+    // .right-balance__img
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    // .right-balance__rating-block
+
+    &__rating-block {
+        z-index: 5;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    // .right-balance__title-name
+
+    &__title-name {
+        font-weight: 500;
+        line-height: math.div(18 ,14 );
+        text-transform: lowercase;
+        text-align: center;
+        margin: 0px 0px 4px 0px;
+    }
+
+    // .right-balance__title-price
+
+    &__title-price {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: math.div(15 ,12 );
+        color: #C41C1B;
+        margin: 0px 0px 100px 0px;
+    }
+
+    // .right-balance__title-article
+
+    &__title-article {
+        margin: 0px 0px 40px 0px;
+    }
+
+    // .right-balance__title-brend
+
+    &__title-brend {
+        margin: 0px 0px 22px 0px;
+    }
+
+    // .right-balance__text
+
+    &__text {
+        margin: 0px 0px 31px 0px;
+        line-height: math.div(18 ,14 );
+    }
+
+    // .right-balance__list
+
+    &__list {
+    }
+
+    // .right-balance__items
+
+    &__items {
+        &:not(:last-child) {
+            margin: 0px 0px 30px 0px;
+        }
+    }
+
+    // .right-balance__buttons
+
+    &__buttons {
+        display: flex;
+        margin: 33px 0px 0px 0px;
+        gap: 17px;
+    }
+
+    // .right-balance__button
+
+    &__button {
+        width: 126.9px;
+        height: 29.5px;
+        background: #3257A4;
+        box-shadow: 0px 0px 3px #1A3E8B, inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        color: white;
+    }
+
+    // .right-balance__button2
+
+    &__button2 {
+        width: 126.9px;
+        height: 29.5px;
+        border: 0.3px solid #3257A4;
+        box-shadow: 0px 3px 5px rgba(73, 122, 226, 0.25), 0px 0px 2px rgba(26, 62, 139, 0.25), inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+}
+.rating {
+
+    // .rating_set
+
+    &_set {
+    }
+
+    // .rating__body
+
+    &__body {
+    }
+
+    // .rating__active
+
+    &__active {
+    }
+
+    // .rating__items
+
+    &__items {
+    }
+
+    // .rating__item
+
+    &__item {
+    }
+
+    // .rating__value
+
+    &__value {
+    }
+}
+.button {
+}
+.button1 {
+}

@@ -1,0 +1,30 @@
+.all-news {margin: 44px 0px 0px 0px;
+
+    // .all-news__container
+
+    &__container {
+        max-width: 1260px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+
+    // .all-news__title
+
+    &__title {
+        font-weight: 500;
+        line-height: math.div(30 ,24 );
+        font-size: rem(24);
+        color: $MainColorBlue;
+        display: flex;
+        justify-content: center;
+        margin: 0px 0px 44px 0px;
+    }
+
+    // .all-news__row
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}

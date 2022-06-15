@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+        <div class="wrapper">
+			@@include('html/_header.htm',{})
+            <main class="page">
+                <section class="glavn">
+                    <div class="glavn__container">
+                        <div class="glavn__title">Главная</div>
+                        <a href="" class="glavn__link"><div class="glavn__ic1"></div><div class="glavn__title3">Оплата</div> </a>
+                    </div>
+                </section>
+                <section class="pay">
+                    <div class="pay__container">
+                        <h3 class="pay__title">Оплата заказа</h3>
+                        <div class="pay__body">
+                            <div class="pay__line1">
+                                <div class="pay__block button1">
+                                    Мы осуществляем отгрузку  медицинского оборудования и комплектующих по всей России.
+                                </div>
+                                <div class="pay__block button1">
+                                    Доставка и самовывоз осуществляются при условии 100% предоплаты счета.
+                                </div>
+                                <div class="pay__block button1">
+                                    Оплата подтверждается при поступлении денежных средств на р/с Поставщика.
+                                </div>
+                            </div>
+                            <div class="pay__line1">
+                                <div class="pay__block button1">
+                                    Наша компания работает как с физическими,  так и с юридическими лицами по безналичному расчету. 
+                                </div>
+                                <div class="pay__block button1">
+                                    Для бюджетных организаций предусмотрена отсрочка платежа до 30 дней
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pay__line-document document-line">
+                            <div class="document-line__block">
+                                <div class="document-line__body">
+                                    <input id="c_55" data-error="Ошибка" class="document-line__input" type="file" value="1" name="form[]">
+                                    <label for="c_55" class="document-line__label"><span class="document-line__text">Договор отсрочки платежа</span></label>
+                                    <div class="document-line__block-img"><img src="@img/46.jpg" class="document-line__img" alt="Картинка"></div>
+                                </div>
+                                <div class="document-line__body">
+                                    <input id="c_55" data-error="Ошибка" class="document-line__input" type="file" value="1" name="form[]">
+                                    <label for="c_55" class="document-line__label"><span class="document-line__text">Договор оплаты</span></label>
+                                    <div class="document-line__block-img"><img src="@img/45.png" class="document-line__img" alt="Картинка"></div>
+                                </div>
+                                <div class="document-line__body">
+                                    <input id="c_55" data-error="Ошибка" class="document-line__input" type="file" value="1" name="form[]">
+                                    <label for="c_55" class="document-line__label"><span class="document-line__text">Приложение к договору</span></label>
+                                    <div class="document-line__block-img"><img src="@img/45.png" class="document-line__img" alt="Картинка"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+		@@include('html/_popup1.htm',{})
+	</body>
+</html>

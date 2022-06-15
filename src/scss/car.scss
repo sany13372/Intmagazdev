@@ -1,0 +1,158 @@
+.cart-medical {
+}
+.medical-cart {
+
+		// .medical-cart__body
+
+		&__body {
+            max-width: 285px;
+            display: flex;
+            flex-direction: column;
+            height: 392px;
+            background: #FFFFFF;
+            border: 0.2px solid #EFF5FE;
+            box-shadow: inset 0px 0px 3px rgba(50, 87, 164, 0.25);
+            border-radius: 15px;
+            &:hover{
+            box-shadow: 21px 17px 8px 0px rgba(34, 60, 80, 0.2);
+                  background-color: #3257A4;
+                  transition: all 0.3s ease-in-out;
+            }
+            @media (max-width: em(486)){
+                  max-width: 230px;
+            }
+		}
+}
+.body {
+
+		// .body__block-img
+
+		&__block-img {
+            padding: 0px 0px 82.4% 0px;
+            margin: 0px 0px 16px 0px;
+            flex: 0 1 33.3%;
+            position: relative;
+		}
+
+		// .body__img
+
+		&__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+		}
+      &__rating1{
+            display: flex;
+            justify-content: flex-end;
+      }
+
+		// .body__text
+
+		&__text {
+            padding: 0px 23px 0px 22px;
+		}
+
+		// .body__title
+
+		&__title {
+            font-weight: 400;
+            font-size: rem(10);
+            line-height: math.div(13 ,10 );
+            color: $MainColorBlue;
+		}
+
+		// .body__title1
+
+		&__title1 {
+            font-weight: 500;
+            font-size: rem(14);
+            line-height: math.div(18 ,14 );
+            color: $mainColor;
+		}
+
+		// .body__price
+
+		&__price {
+            font-weight: 500;
+            font-size: rem(12);
+            line-height: math.div(15 ,12 );
+            color: #C41C1B;
+            margin: 4px 0px 0px 0px;
+		}
+
+		// .body__buttons
+
+		&__buttons {
+            margin: 24px 0px 0px 0px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 400;
+            font-size: rem(14);
+            line-height: math.div(18 ,14 );
+		}
+
+		// .body__button1
+
+		&__button1 {
+            width: 113px;
+            height: 27px;
+            filter: drop-shadow(0px 3px 5px rgba(73, 122, 226, 0.25));
+            background-color: $MainColorBlue;
+            box-shadow: 0px 0px 3px #1A3E8B, inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            color: #EBF4FC;
+		}
+
+		// .body__button2
+
+		&__button2 {
+            width: 113px;
+            height: 27px;
+            background: #FFFFFF;
+            border: 0.5px solid #3257A4;
+            border-radius: 5px;
+            color: $MainColorBlue;
+		}
+}
+.buttt{
+    &:hover{
+        background-color: #C41C1B;
+    }
+}
+.rating {
+    z-index: 5;
+    top: 0px;
+    right: 0;
+
+
+		// .rating_set
+
+		&_set {
+		}
+
+		// .rating__body
+
+		&__body {
+		}
+
+		// .rating__active
+
+		&__active {
+		}
+
+		// .rating__items
+
+		&__items {
+		}
+
+		// .rating__item
+
+		&__item {
+		}
+
+		// .rating__value
+
+		&__value {
+		}
+}

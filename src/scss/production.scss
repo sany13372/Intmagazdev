@@ -1,0 +1,114 @@
+.production {
+    margin: 15px 0px 0px 0px;
+
+    // .production__container
+
+    &__container {
+        max-width: 1260px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+
+    // .production__title
+
+    &__title {
+        margin: 0px 0px 58px 0px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        font-size: rem(24);
+        line-height: math.div(30 ,24 );
+        color: $MainColorBlue;
+    }
+
+    // .production__body
+
+    &__body {
+
+    }
+
+    // .production__row
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 0px 44px 0px;
+        @media (max-width: em(1243)){
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+    }
+
+    // .production__block
+
+}
+.product-block {
+
+    // .product-block__body
+
+    &__body {
+        padding: 31px 30px 23px 21px;
+        flex: 0 1 390px;
+        border: 0.2px solid #EFF5FE;
+        box-shadow: 0px 20px 50px rgba(73, 122, 226, 0.2), inset 0px 0px 3px rgba(50, 87, 164, 0.25);
+        border-radius: 15px;
+        &:hover{
+            box-shadow: 21px 17px 8px 0px rgba(34, 60, 80, 0.2);
+        }
+        @media (max-width: em(432)){
+            padding: 31px 10px 23px 10px;
+        }
+    }
+
+    // .product-block__block-img
+
+    &__block-img {
+        display: flex;
+        justify-content: center;
+        margin: 0px 0px 23px 0px;
+        border: 0.2px solid #EFF5FE;
+        box-shadow: 0px 20px 50px rgba(73, 122, 226, 0.2), inset 0px 0px 3px rgba(50, 87, 164, 0.25);
+        border-radius: 15px;
+    }
+
+    // .product-block__img
+
+    &__img {
+    }
+
+    // .product-block__title
+
+    &__title {
+        font-weight: 500;
+        font-size: rem(18);
+        line-height: math.div(23 ,18 );
+        text-transform: uppercase;
+        color: $mainColor;
+        margin: 0px 0px 7px 0px;
+    }
+
+    // .product-block__text
+
+    &__text {
+        margin: 0px 0px 10px 0px;
+        line-height: math.div(18 ,14 );
+    }
+}
+.cart-right {
+
+    // .cart-right__title1
+
+    &__title1 {
+    }
+
+    // .cart-right__link
+
+    &__link {
+    }
+
+    // .cart-right__linkic
+
+    &__linkic {
+    }
+}

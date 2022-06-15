@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+        <div class="wrapper">
+			@@include('html/_header.htm',{})
+            <main class="page">
+                <section class="glavn">
+                    <div class="glavn__container">
+                        <div class="glavn__title">Главная</div>
+                        <div class="glavn__ic1"></div><div class="glavn__title3">Корзина</div> 
+                        <a href="" class="glavn__link"><div class="glavn__ic1"></div><div class="glavn__title3">Оформить заказ</div> </a>
+                    </div>
+                </section>
+                <section class="decoration">
+                    <div class="decoration__container">
+                        <a href=""><div class="decoration__line-basket">
+                            <div class="decoration__ic"></div>
+                            <h3 class="decoration__title-ic">вернутся в корзину</h3>
+                        </div></a>
+                        <div class="decoration__body">
+                            <div class="decoration__left-block decoration-left">
+                                <div class="decoration-left__body">
+                                    <h3 class="decoration-left__title">Новый покупатель</h3>
+                                    <div class="decoration-left__checkbox-line decoration-checkbox" data-checkbox2>
+                                        <input id="c_92" data-error="Ошибка" data-box class="decoration-checkbox__input" type="radio" checked value="1" name="checkbox">
+                                        <label for="c_92" class="decoration-checkbox__label"><span class="decoration-checkbox__text">Оформить заказ как гость </span></label>
+                                    </div>
+                                    <a href="formregistration.html"><div class="decoration-left__footer-check">Быстрое оформление заказа без создания учетной записи</div></a>
+                                    <div class="decoration-left decoration-checkbox2" data-checkbox>
+                                        <input id="c_93" data-error="Ошибка"class="decoration-checkbox__input"  type="radio" value="1" name="checkbox">
+                                        <label for="c_93" class="decoration-checkbox__label"><span class="decoration-checkbox__text">Регистрация</span></label>
+                                    </div>
+                                    <a href="formregistration.html"><div class="decoration-left__footer-check">Создайте учетную запись и используйте её для оформления заказа</div></a>
+                                    <div class="decoration-left__block-button" data-but1 hidden><a href="formregistration.html"><button class="decoration-left__button button">регистрация</button></a></div>
+                                    <div class="decoration-left__block-button" data-but2><a href="formguest.html"><button class="decoration-left__button button">оформить заказ как гость</button></a></div>
+                                    <div class="decoration-left__footer">Нажимая на кнопку «Оформить», я соглашаюсь с условиями.</div>
+                                </div>
+                            </div>
+                            <div class="decoration__right-block decoration-right">
+                                <div class="decoration-right__body">
+                                    <h3 class="decoration-right__title">Постоянный клиент</h3>
+                                    <div class="decoration-right__block-input">
+                                        <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Логин" class="decoration-right__input">
+                                    </div>
+                                    <div class="decoration-right__block-input">
+                                        <input autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="Пароль" class="decoration-right__input">
+                                    </div>
+                                    <div class="decoration-right__footer-input">Забыли пароль?</div>
+                                    <div class="decoration-right__block-button"><a href="entrancecabinet.html"><button class="decoration-right__button button">войти</button></a></div>
+                                    <div class="decoration-right__footer-title">Нажимая на кнопку «Войти», я соглашаюсь с условиями.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+		@@include('html/_popup1.htm',{})
+	</body>
+</html>
