@@ -128,7 +128,6 @@
         
          //   buttonBasket.addEventListener("click", function () {
          //   });
-       
             function buttonBaske(buttonBasket) {
                 buttonBaskets.forEach(buttonBasket => {
                     
@@ -139,34 +138,36 @@
             const decorationButton = document.querySelector('.decoration-left__button');
             const buttonRegistr = document.querySelector('[data-but1]');
             const buttonZakaz = document.querySelector('[data-but2]');
-            const basketButton =document.querySelectorAll('.orders__block-ic');
-            const bodyCard =document.querySelector('.left-backet__body-card');
-            
-            if (1>0) {
+            const korzina = document.querySelector('.left-backet__body-card');
+            const blockss =document.querySelector('.mass-kalkulator__title');
+           // const blockrevo =basketButton.closest('.orders');
                 document.addEventListener("click", function (e) {
                     const targetElement = e.target;
-                    if (targetElement.closest('.decoration-checkbox2')) {
-                        buttonRegistr.style.display = 'block';
-                        buttonZakaz.style.display = 'none';
-                    }
-                    if (targetElement.closest('.decoration-checkbox')) {
-                        buttonRegistr.style.display = 'none';
-                        buttonZakaz.style.display = 'block';
-                    }
                     if (targetElement.closest('.orders__block-ic')) {
+                        targetElement.closest('.orders').remove();
+                    }
+                    if (targetElement.closest('.body__button1')) {
+                        let block = targetElement.closest('.cart-medical');
+                        let blockkorzina = korzina.appendChild(block);
+                       // korzina.appendChild(block);
+                    }
+                    //Условие калькулятора увелечение или уменьшение 
+                    if (targetElement.closest('.mass-kalkulator__munes') || targetElement.closest('.mass-kalkulator__plus')) {
+                        let bodyCard = targetElement.closest('.orders');
+                        let counter = bodyCard.querySelector('.mass-kalkulator__title');
+                        //Увелечение
+                        if (targetElement.closest('.mass-kalkulator__munes')) {
+                            counter.innerHTML = ++counter.innerHTML;
+                        }
+                        //Уменьшение 
+                        if (targetElement.closest('.mass-kalkulator__plus')) {
+                            if (counter.innerHTML > 1) {
+                                counter.innerHTML = --counter.innerHTML;
+                            }
+                        }
                     }
                 });
-            }
-            function dip(params) {
-            }
-            console.log(dip);
-            basketButton.forEach(basketButto => {
-                basketButto.addEventListener("click", function (e) {
-                    const blockRemoves = bodyCard.querySelector('.orders');
-                    blockRemoves.style.display = 'none';
-                    console.log('yess');
-                });
-            });
+                //========================================================================================================================================================
             let formCall =document.querySelector('.popup__call'),
             inputNameuser = formCall.getElementsByTagName('input')[0],
             inputTeluser = formCall.getElementsByTagName('input')[1],
@@ -186,4 +187,40 @@
                 }
             });
             formCall.appendChild(popupEror);
+            let da =function(a,b) {
+                return a + b;
+            };
+            function User(name, age) {
+                this.name = name ,
+                this.age = age
+            }
+            let Alex = new User('Alex','32')
+            console.log(Alex);
+            let funrDo = function jhony(params) {
+                console.log(jhony);
+            };
+            let arr = [1,2,3,4,5],
+            arr2 = [...arr, 6,7,8];
+            console.log(arr2);
 
+            //========================================================================================================================================================
+            function polidrom(parament) {
+                let massiv = parament.split('');
+                let setMassiv = massiv.reverse();
+                let readyMassiv = setMassiv.join('');
+                if (parament.toLowerCase() == readyMassiv.toLowerCase()) {  
+                    return true
+                }   else{ return false}
+                
+            }
+            console.log(polidrom('Дад'));
+            const massiv = [-1,3,4,5,6,7,8,7,8]
+            const sigh = function (params) {
+              let result = 0;
+              for (let index = 0; index < params.length; index++) {
+                if (Math.sign(params[index]) !==1  ) {
+                  ++result
+                }
+              }
+            }
+            console.log(sigh(massiv));

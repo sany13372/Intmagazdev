@@ -313,10 +313,6 @@
 		// .checkbox__label
 		&__input:focus + &__label{
 		}
-		&__input:checked + &__label::before{
-			background-color: #3257A4;
-			cursor: pointer;
-		}
 
 		&__label {
 			line-height: 110%;
